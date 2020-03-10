@@ -1,0 +1,36 @@
+Listar todos os usuários mostrando o título do tipo de usuário;
+public List<Usuarios> ListarComTiposUsuario()
+{
+	return ctx.Usuarios.Include(e => e.IdTiposUsuarioNavigation).ToList();
+)
+
+Listar somente os Pacotes Ativos; 
+public List<Pacotes> ListarAtivos(bool true)
+        {
+            return ctx.Pacotes.ToList().FindAll(p => p.Ativo == true);
+        }
+
+Listar somente os Pacotes Inativos; 
+public List<Pacotes> ListarInativos(bool false)
+        {
+            return ctx.Pacotes.ToList().FindAll(p => p.Ativo == false);
+        }
+
+Listar somente os Pacotes para uma determinada cidade;
+public List<Pacotes> ListarAtivos(int id)
+        {
+            return ctx.Pacotes.ToList().FindAll(p => p.IdCidade == id);
+        }
+
+Listar os Pacotes com ordenação por preço. Ou seja, do mais barato para
+ o mais caro e vice-versa
+public List<Pacotes> ListarPreçoCrescente()
+	{
+		return ctx.Pacotes.ToList().OrderBy(p => p.Valor);
+	}
+
+public List<Pacotes> ListarPreçoDecrescente()
+	{
+		return ctx.Pacotes.ToList().OrderByDescending(p => p.Valor);
+	}
+
