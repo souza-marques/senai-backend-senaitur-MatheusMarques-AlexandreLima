@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.Senatur.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Senai.Senatur.WebApi.Controllers.CidadesController.Get">
+            <summary>
+            Lista todos as cidades
+            </summary>
+            <returns> Uma lista de cidades e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.CidadesController.GetById(System.Int32)">
+            <summary>
+            Busca uma cidade através do ID
+            </summary>
+            <param name="id">ID da cidade que será buscada</param>
+            <returns>Uma cidade buscada e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.CidadesController.Post(Senai.Senatur.WebApi.Domains.Cidades)">
+            <summary>
+            Cadastra uma nova cidade
+            </summary>
+            <param name="novaCidade">Objeto com as informações</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.CidadesController.Put(Senai.Senatur.WebApi.Domains.Cidades)">
+            <summary>
+            Atualiza uma cidade já existente
+            </summary>
+            <param name="id">ID da cidade que será atualizado</param>
+            <param name="cidadeAtualizada">Objeto com as novas informações</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.CidadesController.Delete(System.Int32)">
+            <summary>
+            Deleta uma cidade
+            </summary>
+            <param name="id">ID da cidade que será deletada</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.LoginController.Post(Senai.Senatur.WebApi.ViewModels.LoginViewModel)">
+            <summary>
+            Faz a validação do usuário 
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Get">
+            <summary>
+            Lista todos os pacotes
+            </summary>
+            <returns>Uma lista de pacotes e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.GetById(System.Int32)">
+            <summary>
+            Busca um pacote através do ID
+            </summary>
+            <param name="id">ID do pacote que será buscado</param>
+            <returns>Um pacote buscado e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.GetAtivos">
+            <summary>
+            Busca todos os pacotes ativos
+            </summary>
+            <returns>Uma lista de pacotes e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.GetInativos">
+            <summary>
+            Busca todos os pacotes inativos
+            </summary>
+            <returns>Uma lista de pacotes e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.GetByCity(System.Int32)">
+            <summary>
+            Busca todos os pacotes por cidade
+            </summary>
+            <param name="id"></param>
+            <returns>Uma lista de pacotes e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Post(Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Cadastra um novo pacote
+            </summary>
+            <param name="novoPacote">Objeto novoPacote que será cadastrado</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Put(Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Atualiza um pacote já existente
+            </summary>
+            <param name="id">ID do pacote que será atualizado</param>
+            <param name="pacoteAtualizado">Objeto que contém as novas informações</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Delete(System.Int32)">
+            <summary>
+            Deleta um pacote existente
+            </summary>
+            <param name="id">ID do paocte que será deletado</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.Get">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+            <returns>Uma lista de tipos de usuário e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.GetById(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do ID
+            </summary>
+            <param name="id">ID do tipo de usuário que será buscado</param>
+            <returns>Um tipo de usuário buscado e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.Post(Senai.Senatur.WebApi.Domains.TiposUsuario)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="novoTipoUsuario">Objeto novoJogo que será cadastrado</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.Put(Senai.Senatur.WebApi.Domains.TiposUsuario)">
+            <summary>
+            Atualiza um tipo de usuário existente
+            </summary>
+            <param name="tuAtualizado">Objeto com as novas informações</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.Delete(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário existente através do id
+            </summary>
+            <param name="id">ID do tipousuario que será deletado</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.Get">
+            <summary>
+            Lista todos os usuarios
+            </summary>
+            <returns>Uma lista de usuarios e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.GetTipos">
+            <summary>
+            Lista todos os usuarios com o seu tipo
+            </summary>
+            <returns>Uma lista de usuarios e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.GetById(System.Int32)">
+            <summary>
+            Busca um usuário através do ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Um usuário buscado e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.Post(Senai.Senatur.WebApi.Domains.Usuarios)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.Put(Senai.Senatur.WebApi.Domains.Usuarios)">
+            <summary>
+            Atualiza um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será atualizado</param>
+            <param name="uAtualizado">Objeto com as novas informações</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.Delete(System.Int32)">
+            <summary>
+            Deleta um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será deletado</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
+    </members>
+</doc>

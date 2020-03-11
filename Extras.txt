@@ -17,7 +17,7 @@ public List<Pacotes> ListarInativos(bool false)
         }
 
 Listar somente os Pacotes para uma determinada cidade;
-public List<Pacotes> ListarAtivos(int id)
+public List<Pacotes> ListarPorCidade(int id)
         {
             return ctx.Pacotes.ToList().FindAll(p => p.IdCidade == id);
         }
