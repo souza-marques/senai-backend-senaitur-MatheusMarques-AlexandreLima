@@ -42,7 +42,7 @@ namespace Senai.Senatur.WebApi.Controllers
         /// <summary>
         /// Busca um usuário através do ID
         /// </summary>
-        /// <param name="id">ID do jogo que será buscado</param>
+        /// <param name="id">ID do usuário que será buscado</param>
         /// <returns>Um usuário buscado e um status code 200 - Ok</returns>
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
@@ -70,12 +70,12 @@ namespace Senai.Senatur.WebApi.Controllers
         /// Atualiza um usuário existente
         /// </summary>
         /// <param name="id">ID do usuário que será atualizado</param>
-        /// <param name="jogoAtualizado">Objeto com as novas informações</param>
+        /// <param name="uAtualizado">Objeto com as novas informações</param>
         /// <returns>Um status code 204 - No Content</returns>
-        [HttpPut("{id}")]
-        public IActionResult Put( Usuarios usuarios)
+        [HttpPut]
+        public IActionResult Put( Usuarios uAtualizado)
         {
-            _usuarioRepository.Atualizar( usuarios);
+            _usuarioRepository.Atualizar( uAtualizado);
 
             return StatusCode(204);
         }
